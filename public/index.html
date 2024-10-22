@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 class="text-center text-5xl font-bold m-10">Shopping Cart</h1>
+    <section>
+        <!-- Input Product Section-->
+        <div id="productform" class="flex justify-center items-center w-full h-1/2 p-10 border-2 gap-10">
+            <div>
+                <label for="productname" class="text-xl">Product Name:</label>
+                <input type="text" id="productname" placeholder="Enter some text" class="border-2 p-2">
+            </div>
+            <div>
+                <label for="price" class="text-xl">Price:</label>
+                <input type="text" id="price" placeholder="Enter some text" class="border-2 p-2">
+            </div>
+            <div>
+                <label for="inputimage" class="text-xl">Image</label>
+                <input type="url" id="inputimage" placeholder="Enter URL" class="border-2 p-2">
+            </div>
+            <button type="button" class="text-white bg-green-500 h-10 w-32 rounded-md" onclick="createProduct()">Create Product</button>
+        </div>
+
+        <!-- Product List Section-->
+        <ul id="product-list" class="flex flex-col mx-52 m-"></ul>
+
+        <!-- Button Add&Delete Product List Section-->
+        <div id="button-add-delete" class="flex mt-4 mx-52 gap-5"></div>
+
+        <!-- Cart Section-->
+        <div id="cart"></div>
+
+        <!-- Cart List Section-->
+        <ul id="cart-list" class="flex flex-wrap gap-5 ml-52"></ul>
+
+        <!-- Total Section-->
+        <div class="flex justify-end h-28">
+            <h2 id="cart-total" class="m-10 font-bold text-3xl">Total: $0</h2>
+        </div>
+    </section>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
